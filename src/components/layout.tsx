@@ -34,7 +34,7 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                             <Link to="/whyBeauty" className={navLinkText}>Why Beauty?</Link>
                         </li>
                         <li className={navLinkItem}>
-                            <Link to="/howItWorks" className={navLinkText}>How It Works</Link>
+                            <Link to="/howItWorks" className={navLinkText}>How It Works</Link>▾
                             <div className={hiddenNav}>
                                 <ul>
                                     <li><Link to="/howItWorks" className={navLinkText}>Overview</Link></li>

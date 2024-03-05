@@ -1,15 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0;
     max-width: 100%;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color:#666666;
+    font-size: 16px;
+    /* may want to make font size 18px by default */ 
 }
 
 /* main{
     background-color: red;
 } */
 
-h1{
+h1, h2{
     font: 300 1.875em/1.33em "Oswald", "Open Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.3em;
+}
+
+p{
+    text-align: center;
 }
 
 /* header */
@@ -31,10 +50,12 @@ nav {
 }
 
 header {
+    max-width: 1090px;
+    margin: auto;
     display: grid;
     /* justify-content: space-between; */
     padding: 8px 0px 9px;
-    grid-template-columns: 50px 1fr 1fr;
+    grid-template-columns: 20px 1fr 1fr;
     grid-template-rows: 100px;
     position: relative;
 }
@@ -127,6 +148,8 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
+    max-width: 1090px;
+    margin: auto;
 }
 
 footer {
@@ -144,7 +167,6 @@ footer ul{
     text-align: center;
     padding: 0.5rem;
     background-color: black;
-    margin: 0;
 }
 .copyright li {
     display: inline;
@@ -194,6 +216,13 @@ footer a {
 
 /* desktop view */ 
 @media screen and (min-width: 768px) {
+
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 1.625em;
+    }
 
     /* desktop header */
     .navDesktop {
