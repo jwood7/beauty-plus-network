@@ -15,8 +15,23 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "gatsby": "^5.13.3",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/css": "^0.0.37",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.62",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.3.3",
+    "typescript-plugin-css-modules": "^5.1.0"
   }
 }
