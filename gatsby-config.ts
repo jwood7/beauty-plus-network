@@ -18,6 +18,10 @@ module.exports = {
             name: `Open Sans`,
             file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`,
           },
+          {
+            name: `Oswald`,
+            file: `https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap`,
+          },
         ],
       },
     },

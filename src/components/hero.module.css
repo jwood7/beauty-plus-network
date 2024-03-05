@@ -1,0 +1,19 @@
+.hero{
+    display: grid;
+    height: 505px;
+}
+
+.heroImage{
+    grid-area: 1 / 1;
+}
+
+.heroChildren{
+    grid-area: 1 / 1;
+    position: relative;
+    place-items: center;
+    display: grid;
+    color: white;
+    /* font-size: 30px; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}

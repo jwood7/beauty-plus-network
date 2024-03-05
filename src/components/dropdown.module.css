@@ -1,6 +1,6 @@
 .dropdownMenu{
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     display: flex;
     flex-direction: column;
@@ -14,10 +14,11 @@
     padding-left: 0;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .dropdownChildren{
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .dropdownMenu ul li{
@@ -33,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px 0px 0px;
+    background-color: transparent;
     /* border-bottom: 1px solid #f0f0f0; */
 }
 
