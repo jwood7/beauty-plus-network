@@ -3,7 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `The Beauty+ Network`,
+    siteUrl: `https://beautyplusnetwork.org/`,
   },
   plugins: [
     "gatsby-plugin-image",
@@ -24,6 +25,12 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/favicon.ico"
+      }
     },
   ],
 }
