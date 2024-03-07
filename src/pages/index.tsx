@@ -1,20 +1,30 @@
 // Step 1: Import React
 import * as React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroImage from '../components/hero'
 import {tripleColumn, columnItem, columnImg, pageMain, titleContainer} from './pages.module.css'
 
 
+type PageProps = {
+  data: {
+    file: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData
+      }
+    }
+  }
+}
 
 // Step 2: Define your component
-const IndexPage = () => {
+const IndexPage = ({data}: PageProps) => {
   return (
     <Layout pageTitle={"Beauty Plus Network"}>
       
       <HeroImage
         alt="Beauty Plus Student and Mentor Hugging"
-        src="../images/beautyplus.jpg"
+        imageData={data.file.childImageSharp.gatsbyImageData}
       >
         <h1>Having the power to earn a sustainabe income transforms lives. <br/>
         It transforms communities.<br/>
@@ -56,8 +66,16 @@ const IndexPage = () => {
   )
 }
 
-// You'll learn about this in the next task, just copy it for now
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "beautyplus.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+  }
+`
+
 export const Head = () => <title>Home Page</title>
 
-// Step 3: Export your component
 export default IndexPage

@@ -1,6 +1,5 @@
 .hero{
     display: grid;
-    height: 505px;
 }
 
 .heroImage{
@@ -16,4 +15,13 @@
     /* font-size: 30px; */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 10px;
+}
+
+/* desktop view */
+@media screen and (min-width: 768px) {
+    .hero{
+        height: 400px;
+    }
+    
 }

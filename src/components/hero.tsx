@@ -1,33 +1,33 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { hero, heroImage, heroChildren, heroDarken } from './hero.module.css';
+import { GatsbyImage, IGatsbyImageData} from "gatsby-plugin-image"
+import { hero, heroImage, heroChildren } from './hero.module.css';
 
 type HeroProps = {
-    src: string,
+    imageData: IGatsbyImageData,
     alt: string,
     children?: React.ReactNode,
 }
 
-const HeroImage = ({src, alt, children}: HeroProps) => {
-  return (
-    <div className={hero}>
-        <StaticImage
-        className={heroImage}
-        src="../images/beautyplus.jpg"
-        alt={alt}
-        placeholder="blurred"
-        layout="fullWidth"
-        // aspectRatio={3 / 1}
-        // formats={["auto", "webp", "avif"]}
-        />
-        <div className={heroChildren}>
-            {children}
+const HeroImage = ({imageData, alt, children}: HeroProps) => {
+    return (
+        <div className={hero}>
+            <GatsbyImage
+            className={heroImage}
+            image={imageData}
+            alt={alt}
+            // placeholder="blurred"
+            // layout="fullWidth"
+            // aspectRatio={3 / 1}
+            // formats={["auto", "webp", "avif"]}
+            />
+            <div className={heroChildren}>
+                {children}
+            </div>
+            
+
         </div>
-        
 
-    </div>
-
-  )
+    )
 }
 
 export default HeroImage;
