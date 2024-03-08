@@ -52,22 +52,22 @@ const WhyBeauty = ({data}:PageProps) => {
       <h2>Together we <strong>rewrite</strong> some stories</h2>
       <div className={stories}>
         <div className={oldStory}>"It is <strong>hard</strong> to be a woman"</div>
-        <div className={arrow}></div>
+        <div className={arrow}>&#10140;</div>
         <div className={newStory}>"I am <strong>proud</strong> to be a woman"</div>
       </div>
       <div className={stories}>
         <div className={oldStory}><strong>25%</strong> of females ages 15-24 in developing countries have never completed primary school and lack the necessary skills to work.</div>
-        <div className={arrow}></div>
+        <div className={arrow}>&#10140;</div>
         <div className={newStory}><strong>"I have an education"</strong><br/>The Beauty+ Network brings young women to class with training and love by professional educators.</div>
       </div>
       <div className={stories}>
         <div className={oldStory}><strong>70%</strong> of people in poverty worldwide are women.</div>
-        <div className={arrow}></div>
+        <div className={arrow}>&#10140;</div>
         <div className={newStory}><strong>"I can feed my family"</strong><br/>The Beauty+ Network brings young women from poverty to stability by providing sustainable life skills and vocational training.</div>
       </div>
       <div className={stories}>
         <div className={oldStory}> Woman are often the <strong>victims</strong> of poverty-related trauma such as rape, abuse, trafficking, coerced prostitution, and more.</div>
-        <div className={arrow}></div>
+        <div className={arrow}>&#10140;</div>
         <div className={newStory}><strong>“I am confident and powerful”</strong><br/>The Beauty+ Network is an enabler that opens doors, inside and out. Our women learn to appreciate their own inner beauty while they help make others feel beautiful too.</div>
       </div>
       <div className={whyBeautyHero}>
