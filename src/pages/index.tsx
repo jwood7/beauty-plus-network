@@ -70,7 +70,7 @@ export const query = graphql`
   query {
     file(relativePath: { eq: "beautyplus.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: FULL_WIDTH, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
       }
     }
   }

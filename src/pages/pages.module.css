@@ -99,7 +99,22 @@
 
 .orange:hover{
     color: #ff7638;
-}   
+}  
+
+.contactLink{
+    color: #D60053;
+    text-decoration: none;
+}
+
+.contactLink:hover{
+    color: #ff7638;
+}
+
+.pageContact p, .pageContact h1{
+    text-align: left;
+    line-height: 1.875em;
+    margin-bottom: 40px;
+}
 
 
 /* desktop view */

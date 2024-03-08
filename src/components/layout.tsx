@@ -27,23 +27,11 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
         <div className={container}>
             
             <header>
-                <Link to="/" className="headerImage" ><StaticImage layout="fixed" alt="Beauty Plus Logo, links to home page" src="../images/logo.png" /></Link>
+                <Link to="/" className="headerImage" ><StaticImage className="headerImage" alt="Beauty Plus Logo, links to home page" src="../images/Beauty-Plus-Logo.png" width={197} quality={100}/></Link>
                 <nav className={navDesktop}>
                     <ul className={navLinks}>
                         <li className={navLinkItem}>
-                            <Link to="/whyBeauty" className={navLinkText}>Why Beauty?</Link>
-                        </li>
-                        <li className={navLinkItem}>
-                            <Link to="/howItWorks" className={navLinkText}>How It Works</Link>▾
-                            <div className={hiddenNav}>
-                                <ul>
-                                    <li><Link to="/howItWorks" className={navLinkText}>Overview</Link></li>
-                                    <li><Link to="/howItWorks" className={navLinkText}>Business Model</Link></li>
-                                    <li><Link to="/howItWorks" className={navLinkText}>Sustainable Network</Link></li>
-                                    <li><Link to="/howItWorks" className={navLinkText}>Our Impact</Link></li>
-                                    
-                                </ul>
-                            </div>
+                            <Link to="/contactInfo" className={navLinkText}>Join Our Network</Link>
                         </li>
                         <li className={navLinkItem}>
                             <Link to="/whoWeAre" className={navLinkText}>Who We Are</Link>▾
@@ -58,8 +46,22 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                             </div>
                         </li>
                         <li className={navLinkItem}>
-                            <Link to="/contactInfo" className={navLinkText}>Join Our Network</Link>
+                            <Link to="/howItWorks" className={navLinkText}>How It Works</Link>▾
+                            <div className={hiddenNav}>
+                                <ul>
+                                    <li><Link to="/howItWorks" className={navLinkText}>Overview</Link></li>
+                                    <li><Link to="/howItWorks" className={navLinkText}>Business Model</Link></li>
+                                    <li><Link to="/howItWorks" className={navLinkText}>Sustainable Network</Link></li>
+                                    <li><Link to="/howItWorks" className={navLinkText}>Our Impact</Link></li>
+                                    
+                                </ul>
+                            </div>
                         </li>
+                        <li className={navLinkItem}>
+                            <Link to="/whyBeauty" className={navLinkText}>Why Beauty?</Link>
+                        </li>
+                        
+                        
                     </ul>
                 </nav>
                 <nav className={navMobile}>

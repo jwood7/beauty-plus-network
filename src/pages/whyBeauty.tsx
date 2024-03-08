@@ -40,7 +40,7 @@ const WhyBeauty = ({data}:PageProps) => {
       <div className= {whyBeauty}>
       <div className={whyBeautyHero}>
         <HeroImage
-          alt="Beauty Plus Network"
+          alt="Silhouette of student cutting hair in front of beauty plus window"
           imageData={data.image1.childImageSharp.gatsbyImageData}
         >
           <h1>Why Beauty?</h1>
@@ -72,7 +72,7 @@ const WhyBeauty = ({data}:PageProps) => {
       </div>
       <div className={whyBeautyHero}>
         <HeroImage
-          alt="Beauty Plus Network"
+          alt="Instructor and Student making heart sign with hands"
           imageData={data.image2.childImageSharp.gatsbyImageData}
           >
             <h2>"I'm not alone"</h2>
@@ -108,12 +108,12 @@ export const query = graphql`
   query {
     image1: file(relativePath: { eq: "beauty-in-action-1.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: FULL_WIDTH, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
       }
     }
     image2: file(relativePath: { eq: "beauty-in-action-2.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: FULL_WIDTH, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
       }
     }
   }
