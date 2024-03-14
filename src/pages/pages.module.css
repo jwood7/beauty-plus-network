@@ -33,6 +33,33 @@
 
 }
 
+/* faqs */
+
+.faqBanner h1{ 
+    background-color: #fa4a4f;
+}
+.pageFAQs{
+    display: grid;
+    row-gap: 5px;
+}
+.pageFAQs p {
+    text-align: left;
+    line-height: 1.875em;
+}
+
+.moreQuestions {
+    font-size: 1.2em;
+    font: 300 1.5625em / 1.6em 'Oswald', Arial, sans-serif;
+    margin: 20px 0 40px;
+    text-align: center;
+
+}
+/* why beauty */
+
+.contactBanner h1{
+    background-color: #d60053;
+}
+
 .oldStory{
     background-color: #f5f5f5;
     color: #666;

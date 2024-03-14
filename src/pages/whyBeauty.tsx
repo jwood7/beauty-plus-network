@@ -119,6 +119,6 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <title>Why Beauty?</title>
+export const Head = () => <title>Why Beauty? « Beauty Plus Network</title>
 
 export default WhyBeauty

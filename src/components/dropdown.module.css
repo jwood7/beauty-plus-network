@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    transition: all linear 0.3s;
 }
 
 /* .dropdownChildren{
@@ -23,7 +24,6 @@
 
 .dropdownMenu ul li{
     padding: 10px 20px;
-    border-bottom: 1px solid #f0f0f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px 0px 0px;
     background-color: transparent;
     /* border-bottom: 1px solid #f0f0f0; */
 }
@@ -44,11 +43,53 @@
 }
 
 .dropdownHeader button{
-    background-color: #EEEEEE;
-    color: #666666;
+    background-color: inherit;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noLink button .active{ /*this doesn't work rn */
+    background-color: #fa4a4f;
+    /* background-color: green; */
+ }
+.noLink button:hover{
+    background-color: #D60053;
+}
+
+ 
+
+.noLink{
+    text-decoration: none;
+    
+    background-color: #ff7638;;
+}
+.noLink button{
+    width: 100%;
+    color: white;
+}
+
+.noLink h2{
+    font-size: 1.7em;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 1;
+    text-align: left;
+    /* text-align: center; */
+}
+
+.indicator{
+    font-weight: 1000;
+    font-size: 30px;
+    line-height: 0;
+    /* height: 0; */
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 

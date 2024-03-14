@@ -1,4 +1,4 @@
-import * as React from 'react'
+import  React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import {
@@ -13,16 +13,20 @@ import {
     navDesktop,
     navMobile,
     headerImage,
+    hamburger,
   } from './layout.module.css'
 import Dropdown from './dropdown'
 
 
   type LayoutProps = {
-    pageTitle: string,
+    pageTitle?: string,
     children?: React.ReactNode
   }
 
 const Layout = ({pageTitle, children}: LayoutProps) => {
+
+    const [open, setOpen] = useState(false);
+
     return (
         <div className={container}>
             
@@ -64,15 +68,17 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                         
                     </ul>
                 </nav>
-                <nav className={navMobile}>
-                    <Dropdown dropdownTitle="" dropdownLink="">
-                        
-                        <ul className={navLinks}>
+                <button onClick={e => setOpen(!open)} className ={hamburger}>&#9776;</button>
+               
+                
+            </header>
+            {open && <nav className={navMobile}>
+                    <ul className={navLinks}>
                         <li className={navLinkItem}>
                             <Link to="/whyBeauty" className={navLinkText}>WHY BEAUTY?</Link>
                         </li>
                         <li className={navLinkItem}>
-                            <Dropdown dropdownTitle="HOW IT WORKS" dropdownLink="/howItWorks">
+                            <Dropdown dropdownTitle="HOW IT WORKS" dropdownLink="/howItWorks" isLink ={true}>
                                 <ul>
                                     <li><Link to="/howItWorks" className={navLinkText}>OVERVIEW</Link></li>
                                     <li><Link to="/howItWorks" className={navLinkText}>BUSINESS MODEL</Link></li>
@@ -82,7 +88,7 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                             </Dropdown>
                         </li>
                         <li className={navLinkItem}>
-                            <Dropdown dropdownTitle="WHO WE ARE" dropdownLink="/whoWeAre">
+                            <Dropdown dropdownTitle="WHO WE ARE" dropdownLink="/whoWeAre" isLink ={true}>
                                 <ul>
                                     <li><Link to="/whoWeAre" className={navLinkText}>OVERVIEW</Link></li>
                                     <li><Link to="/ourTeam" className={navLinkText}>OUR TEAM</Link></li>
@@ -95,10 +101,7 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                             <Link to="/contactInfo" className={navLinkText}>JOIN OUR NETWORK</Link>
                         </li>
                     </ul>
-                    </Dropdown>
-                </nav>
-                
-            </header>
+                </nav> }
             <main>
                 {/* <h1 className={heading}>{pageTitle}</h1> */}
                 {children}
@@ -115,7 +118,7 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                     </div>
                     <ul>
                         <li><Link to="/faq">FAQs</Link></li>
-                        <li><Link to="/contact=info"> Contact us</Link></li>
+                        <li><Link to="/contactInfo"> Contact us</Link></li>
                     </ul>
                 </div>
                 <div className = {copyright}>

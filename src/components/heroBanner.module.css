@@ -18,17 +18,18 @@
 }
 
 .heroTitle h1{
-    background-color: #d60053;
+    background-color: #fa4a4f; /*#d60053;*/
     color: #fff;
     /* left: 0; */
     margin: 0;
     min-width: 20%;
     /* position: relative; */
     text-align: right;
-    padding: 8px 24px 9px 40px;
+    padding: 8px 24px 9px 24px;
     /* bottom: 390px; */
     grid-area: 2/1/3/1;
     margin-bottom: 48px;
+    min-width: 150.88px;
     
 }
 

@@ -6,11 +6,12 @@ type HeroProps = {
     imageData: IGatsbyImageData,
     alt: string,
     title?: string,
+    className?: string
 }
 
-const HeroBannerImage = ({imageData, alt, title}: HeroProps) => {
+const HeroBannerImage = ({imageData, alt, title, className}: HeroProps) => {
     return (
-        <div className={heroBanner}>
+        <div className= {`${heroBanner} ${className}`}>
             <GatsbyImage
             className={heroBannerImage}
             image={imageData}

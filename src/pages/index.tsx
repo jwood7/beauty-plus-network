@@ -76,6 +76,6 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Beauty Plus Network</title>
 
 export default IndexPage

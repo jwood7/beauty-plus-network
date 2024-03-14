@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroBannerImage from '../components/heroBanner'
 import HeroImage from '../components/hero'
-import {pageMain, contactLink, pageContact} from './pages.module.css'
+import {pageMain, contactLink, pageContact, contactBanner} from './pages.module.css'
 
 
 type PageProps = {
@@ -26,6 +26,7 @@ const IndexPage = ({data}: PageProps) => {
         alt="Four Beauty Plus Students with their hands in the air"
         imageData={data.file.childImageSharp.gatsbyImageData}
         title="Contact Us"
+        className={contactBanner}
       />
 
       <div className={`${pageMain} ${pageContact}`}>
@@ -49,6 +50,6 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Contact Us  « Beauty Plus Network</title>
 
 export default IndexPage
