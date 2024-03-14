@@ -41,6 +41,9 @@
 .pageFAQs{
     display: grid;
     row-gap: 5px;
+    margin: auto;
+    max-width: 750px;
+    padding: 100px 20px;
 }
 .pageFAQs p {
     text-align: left;
@@ -50,7 +53,7 @@
 .moreQuestions {
     font-size: 1.2em;
     font: 300 1.5625em / 1.6em 'Oswald', Arial, sans-serif;
-    margin: 20px 0 40px;
+    margin: 40px 0 40px;
     text-align: center;
 
 }
@@ -160,6 +163,10 @@
 
     .titleContainer{
         padding: 0 43px 40px; 
+    }
+
+    .pageFAQs{
+        padding: 100px 0 0 0;
     }
 
     .stories{

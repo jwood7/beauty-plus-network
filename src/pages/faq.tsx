@@ -23,13 +23,13 @@ const faqPage = ({data}: PageProps) => {
   return (
     <Layout pageTitle={"Beauty Plus Network"}>
       <HeroBannerImage
-        alt="Four Beauty Plus Students with their hands in the air"
+        alt="Blurry image of a Beauty Plus salon with the word hope visible in the mirror"
         imageData={data.file.childImageSharp.gatsbyImageData}
         title="FAQs"
         className={faqBanner}
       />
 
-      <div className={`${pageMain} ${pageFAQs}`}>
+      <div className={`${pageFAQs}`}>
         <Dropdown
             dropdownTitle = "DO YOU TAKE DONATIONS?"
             isLink = {false}
@@ -139,7 +139,7 @@ const faqPage = ({data}: PageProps) => {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "beauty-excited.jpg" }) {
+    file(relativePath: { eq: "beauty-hope.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
       }
