@@ -71,6 +71,7 @@ header {
     align-items: top;
     justify-content: space-between;
     height: 100px;
+    z-index: 2;
 }
 
 .headerImage{

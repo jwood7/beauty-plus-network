@@ -87,6 +87,21 @@
     transform: rotateZ(90deg);
 }
 
+/* privacy */
+
+.pagePrivacy{
+    max-width: 1090px;
+    margin: auto;
+    padding: 50px 20px 20px 20px;
+}
+
+.pagePrivacy p{
+    text-align: left;
+    line-height: 1.875em;
+    margin-bottom: 40px;
+
+}
+
 .button{
     color: white;
     padding: 3px 25px 4px;

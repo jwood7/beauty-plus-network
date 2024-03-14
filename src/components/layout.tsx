@@ -124,8 +124,8 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
                 <div className = {copyright}>
                     <ul>
                         <li>© 2021 Beauty Plus Network</li>
-                        <li><Link to="/terms">All Rights Resevered</Link></li>
-                        <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                        <li>ll Rights Resevered</li>
+                        <li><Link to="/privacyPolicy">Privacy Policy</Link></li>
                     </ul>
                 </div>
             </footer>
