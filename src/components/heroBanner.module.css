@@ -14,7 +14,7 @@
     height: 130px;
     display: grid;
     grid-template-rows: 1fr 96px;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: fit-content(100%) 1fr;
 }
 
 .heroTitle h1{
@@ -22,14 +22,14 @@
     color: #fff;
     /* left: 0; */
     margin: 0;
-    min-width: 20%;
     /* position: relative; */
     text-align: right;
     padding: 8px 24px 9px 24px;
     /* bottom: 390px; */
     grid-area: 2/1/3/1;
     margin-bottom: 48px;
-    min-width: 150.88px;
+    /* min-width: 150.88px; */
+    width: fit-content;
     
 }
 
@@ -38,9 +38,16 @@
     .heroBannerImage{
         height: 450px;
     }
+    /* .heroBannerImage img{
+        object-fit: cover;
+        height: 450px;
+        width: 100%;
+        object-position: center top;
+    } */
 
     .heroTitle{
         height: 450px;
+        grid-template-columns: 25% 1fr;
     }
 
     .heroBanner{

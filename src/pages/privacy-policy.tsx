@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroBannerImage from '../components/heroBanner'
-import {pageMain, moreQuestions, pagePrivacy, faqBanner} from './pages.module.css'
+import {pageMain, moreQuestions, pagePrivacy, contactBanner} from './pages.module.css'
 import Dropdown from '../components/dropdown'
 
 
@@ -23,10 +23,10 @@ const faqPage = ({data}: PageProps) => {
   return (
     <Layout pageTitle={"Our commitment to privacy"}>
         <HeroBannerImage
-            alt="Blurry image of a Beauty Plus salon with the word hope visible in the mirror"
+            alt="Cambodian building"
             imageData={data.file.childImageSharp.gatsbyImageData}
             title="Our commitment to privacy"
-            className={faqBanner}
+            className={contactBanner}
         />
 
         <div className={`${pagePrivacy}`}>
