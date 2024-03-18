@@ -87,6 +87,19 @@
     transform: rotateZ(90deg);
 }
 
+/* it's a human issue */
+
+.pagePrivacy p.attribution{
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about{
+    font-style: italic;
+}
+
+
 /* privacy */
 
 .pagePrivacy{
@@ -109,6 +122,12 @@
 .pagePrivacy li{
     list-style-type: disc;
     line-height: 1.875em;
+}
+
+.pagePrivacy h1{
+    text-align: left;
+    line-height: 1.875em;
+    font-size: 30px;
 }
 
 /* contact page */
@@ -215,6 +234,12 @@ p a:hover {
 .row-image{
     margin: 25 20 30 20;
     width: 100%;
+}
+
+figcaption{
+    font-size: 0.875em;
+    text-align: center;
+    margin-top: 10px;
 }
 
 

@@ -22,9 +22,9 @@ const EducatorsPage = ({data}: PageProps) => {
   return (
     <Layout pageTitle={"Beauty Plus Network"}>
         <HeroBannerImage
-            alt="Members of the Beauty+ Team smiling and posing for a photo"
+            alt="Beauty+ Graduates"
             imageData={data.file.childImageSharp.gatsbyImageData}
-            title="The Beauty+ Team"
+            title="The Beauty+ Students"
             // className={faqBanner}
         />
         <p>Since opening its doors in 2013, our network has graduated over 500 students and trained many more. Some of our graduates have offered to tell their stories and share their success below.</p>

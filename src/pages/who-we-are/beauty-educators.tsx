@@ -22,9 +22,9 @@ const EducatorsPage = ({data}: PageProps) => {
   return (
     <Layout pageTitle={"Beauty Plus Network"}>
         <HeroBannerImage
-            alt="Members of the Beauty+ Team smiling and posing for a photo"
+            alt="Bueaty+ Educators"
             imageData={data.file.childImageSharp.gatsbyImageData}
-            title="The Beauty+ Team"
+            title="The Beauty+ Educators"
             className={educatorsBanner}
         />
         <div className={leftRow}>
