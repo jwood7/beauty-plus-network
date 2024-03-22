@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroBannerImage from '../../components/heroBanner'
-import {rightRow, leftRow, rowText, button, orange, rowImage} from '../pages.module.css'
+import {rightRow, rightRowContainer, leftRow, rowText, button, orange, rowImage} from '../pages.module.css'
 
 
 type PageProps = {
@@ -36,14 +36,16 @@ const HowItWorksPage = ({data}: PageProps) => {
                 <p>This is not just a charity, but a creator of sustainable social businesses. The Beauty+ Network does so much more than just provide beauty training – we link our students to the knowledge and people they need to succeed before and after they graduate.</p>
             </div>
         </div>
-        <div className={rightRow}>
-            <div className={rowImage}>
-                <StaticImage src= "../../images/student-closeup.jpg" alt="Closeup of a student" layout="fullWidth"/>
-            </div>
-            <div className={rowText}>
-                <h2>The Business Model</h2>
-                <p>We connect our students with successful graduates, beauty professionals from around the world and other supporters through our School, our Network and our Salon.</p>
-                <Link to="/how-it-works/the-business-model/" className={`${orange} ${button}`}>See Our Model</Link>
+        <div className={rightRowContainer}>
+            <div className={rightRow}>
+                <div className={rowImage}>
+                    <StaticImage src= "../../images/student-closeup.jpg" alt="Closeup of a student" layout="fullWidth"/>
+                </div>
+                <div className={rowText}>
+                    <h2>The Business Model</h2>
+                    <p>We connect our students with successful graduates, beauty professionals from around the world and other supporters through our School, our Network and our Salon.</p>
+                    <Link to="/how-it-works/the-business-model/" className={`${orange} ${button}`}>See Our Model</Link>
+                </div>
             </div>
         </div>
         <div className={leftRow}>
@@ -56,13 +58,15 @@ const HowItWorksPage = ({data}: PageProps) => {
                 <Link to="/how-it-works/the-sustainable-network/" className={`${orange} ${button}`}>Learn About Our Network</Link>
             </div>
         </div>
-        <div className={rightRow}>
-            <div className={rowImage}>
-                <StaticImage src= "../../images/reflection.jpg" alt="reflection of the beauty+ logo" layout="fullWidth" />
-            </div>
-            <div className={rowText}>
-                <h2>How We Evolve</h2>
-                <p>From establishing the initial solution we continue to empower graduates to open their own microbusinesses. Our vision is to create more financial independence and open more opportunities for women through beauty.</p>
+        <div className={rightRowContainer}>
+            <div className={rightRow}>
+                <div className={rowImage}>
+                    <StaticImage src= "../../images/reflection.jpg" alt="reflection of the beauty+ logo" layout="fullWidth" />
+                </div>
+                <div className={rowText}>
+                    <h2>How We Evolve</h2>
+                    <p>From establishing the initial solution we continue to empower graduates to open their own microbusinesses. Our vision is to create more financial independence and open more opportunities for women through beauty.</p>
+                </div>
             </div>
         </div>
         <div className={leftRow}>

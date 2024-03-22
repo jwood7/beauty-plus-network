@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroBannerImage from '../../components/heroBanner'
-import {rightRow, leftRow, rowText, button, orange, rowImage} from '../pages.module.css'
+import {rightRow, leftRow, rowText, button, orange, rowImage, topText} from '../pages.module.css'
 
 
 type PageProps = {
@@ -27,7 +27,7 @@ const EducatorsPage = ({data}: PageProps) => {
             title="The Beauty+ Students"
             // className={faqBanner}
         />
-        <p>Since opening its doors in 2013, our network has graduated over 500 students and trained many more. Some of our graduates have offered to tell their stories and share their success below.</p>
+        <p className={topText}>Since opening its doors in 2013, our network has graduated over 500 students and trained many more. Some of our graduates have offered to tell their stories and share their success below.</p>
         <div className={rightRow}>
             <div className={rowImage}>
                 <StaticImage src= "../../images/jasmine.jpg" alt="Jasmine" layout="fullWidth"/>

@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroBannerImage from '../../components/heroBanner'
-import {rightRow, leftRow, rowText, button, orange, rowImage, educatorsBanner} from '../pages.module.css'
+import {rightRow, leftRow, rowText, button, orange, rowImage, educatorsBanner, joinTeam} from '../pages.module.css'
 
 
 type PageProps = {
@@ -65,7 +65,7 @@ const EducatorsPage = ({data}: PageProps) => {
                 <p>An expert in makeup and beauty, Sophion worked with our students teaching them Bobbi Brown makeup essentials. Coming from Singapore, Sophion brought a great depth of knowledge and experience working with Asian skin and helped our students find looks that were right for their market. Sophion’s incredible sense of style and experience as a makeup educator helped our students become much more skilled in using makeup.</p>
             </div>
         </div>
-        <p>Contact us at <a href="mailto:info@beautyplusnetwork.org">info@beautyplusnetwork.org </a>if you are interested in joining this awesome team.</p>
+        <p className={joinTeam}>Contact us at <a href="mailto:info@beautyplusnetwork.org">info@beautyplusnetwork.org </a>if you are interested in joining this awesome team.</p>
     </Layout>
   )
 }

@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import { StaticImage, IGatsbyImageData} from 'gatsby-plugin-image'
 import HeroBannerImage from '../../components/heroBanner'
-import {rightRow, leftRow, rowText, button, orange, rowImage} from '../pages.module.css'
+import {rightRow, rightRowContainer, leftRow, rowText, button, orange, rowImage, educatorsBanner} from '../pages.module.css'
 
 
 type PageProps = {
@@ -25,7 +25,7 @@ const TheBusinessModelPage = ({data}: PageProps) => {
             alt="Beauty Plus hairdresser demonstrates a technique to students"
             imageData={data.file.childImageSharp.gatsbyImageData}
             title="The Business Model"
-            // className={faqBanner}
+            className={educatorsBanner}
         />
         <div className={leftRow}>
             <div className={rowImage}>
@@ -36,13 +36,15 @@ const TheBusinessModelPage = ({data}: PageProps) => {
                 <p>Provides “fit for purpose” cosmetology education and intern opportunities to young women who come from poverty in developing countries and enables them to achieve financial independence.</p>
             </div>
         </div>
-        <div className={rightRow}>
-            <div className={rowImage}>
-                <StaticImage src= "../../images/a-big-network.jpg" alt="Large class of beauty+ students being taught" layout="fullWidth"/>
-            </div>
-            <div className={rowText}>
-                <h2>The Beauty+ Network</h2>
-                <p>Connects our students with successful Beauty+ graduates, global beauty professionals and impassioned supporters from around the world. Every year, beauty artisans come to teach at our beauty schools, where they educate while being inspired by local cultures.</p>
+        <div className={rightRowContainer}>
+            <div className={rightRow}>
+                <div className={rowImage}>
+                    <StaticImage src= "../../images/a-big-network.jpg" alt="Large class of beauty+ students being taught" layout="fullWidth"/>
+                </div>
+                <div className={rowText}>
+                    <h2>The Beauty+ Network</h2>
+                    <p>Connects our students with successful Beauty+ graduates, global beauty professionals and impassioned supporters from around the world. Every year, beauty artisans come to teach at our beauty schools, where they educate while being inspired by local cultures.</p>
+                </div>
             </div>
         </div>
         <div className={leftRow}>
