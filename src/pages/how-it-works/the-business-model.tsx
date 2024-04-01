@@ -54,7 +54,7 @@ const TheBusinessModelPage = ({data}: PageProps) => {
             <div className={rowText}>
                 <h2>The Beauty+ Salon</h2>
                 <p>Provides high-end beauty services at locally competitive prices. Our salons offer internships and full-time job opportunities to our students to enable their success. As a sustainable social business, our salons work to be independently profitable. Each salon’s profit is invested back into the network to expand our training and grow the network.</p>
-                <a href="https://www.tripadvisor.com/Attraction_Review-g297390-d13657030-Reviews-Royal_Beauty_Nail_Spa-Siem_Reap_Siem_Reap_Province.html" className={`${orange} ${button}`}>Learn About Our Network</a>
+                <a href="https://www.tripadvisor.com/Attraction_Review-g297390-d13657030-Reviews-Royal_Beauty_Nail_Spa-Siem_Reap_Siem_Reap_Province.html" className={`${orange} ${button}`}>Visit Our Salon</a>
             </div>
         </div>
     </Layout>

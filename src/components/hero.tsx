@@ -1,6 +1,6 @@
 import * as React from "react"
 import { GatsbyImage, IGatsbyImageData} from "gatsby-plugin-image"
-import { hero, heroImage, heroChildren } from './hero.module.css';
+import { hero, heroImage, heroChildren, heroBackground} from './hero.module.css';
 
 type HeroProps = {
     imageData: IGatsbyImageData,
@@ -20,8 +20,10 @@ const HeroImage = ({imageData, alt, children}: HeroProps) => {
             // aspectRatio={3 / 1}
             // formats={["auto", "webp", "avif"]}
             />
+            <div className={heroBackground}>
             <div className={heroChildren}>
                 {children}
+            </div>
             </div>
             
 

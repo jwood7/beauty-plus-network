@@ -24,7 +24,7 @@ const sarahsHeroesPage = ({data}: PageProps) => {
         <HeroBannerImage
             alt="Beauty Plus Classroom"
             imageData={data.file.childImageSharp.gatsbyImageData}
-            title="Our Blog"
+            title="Doug's Inspiration"
             className={contactBanner}
         />
 

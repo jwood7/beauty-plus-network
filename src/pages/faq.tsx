@@ -130,7 +130,7 @@ const faqPage = ({data}: PageProps) => {
             At that level of income, a person is able to have enough income for a place to stay and food to eat, but not much more.
             </p>
         </Dropdown>
-        <div className={moreQuestions}>Have more questions? Please reach out to us on our social media channels or by email at info@beautyplusnetwork.org. We are happy to connect</div>
+        <p className={moreQuestions}>Have more questions? Please reach out to us by email at <a href="mailto:info@beautyplusnetwork.org">info@beautyplusnetwork.org</a>. We are happy to connect.</p>
       </div>
       
     </Layout>

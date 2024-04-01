@@ -108,24 +108,24 @@ const Layout = ({pageTitle, children}: LayoutProps) => {
             </main>
             <footer>
                 <div className= {mainFooter}>
-                    <div className= {footerImage}>
+                    {/* <div className= {footerImage}>
                         <Link to="/">
                             <StaticImage
                                 alt="Beauty Plus Logo, links to home page"
                                 src="../images/logo-icon.png"
                             />
                         </Link>
-                    </div>
+                    </div> */}
                     <ul>
                         <li><Link to="/faq">FAQs</Link></li>
-                        <li><Link to="/contactInfo"> Contact us</Link></li>
+                        <li><Link to="/contact-info"> Contact us</Link></li>
                     </ul>
                 </div>
                 <div className = {copyright}>
                     <ul>
-                        <li>© 2021 Beauty Plus Network</li>
-                        <li>ll Rights Resevered</li>
-                        <li><Link to="/privacyPolicy">Privacy Policy</Link></li>
+                        <li>© {new Date().getFullYear()} Beauty Plus Network</li>
+                        <li>All Rights Resevered</li>
+                        <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                     </ul>
                 </div>
             </footer>

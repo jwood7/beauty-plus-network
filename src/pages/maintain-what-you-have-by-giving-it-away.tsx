@@ -25,7 +25,7 @@ const busyPage = ({data}: PageProps) => {
         <HeroBannerImage
             alt="Beauty Plus Classroom"
             imageData={data.file.childImageSharp.gatsbyImageData}
-            title="Our Blog"
+            title="Giving Away"
             className={contactBanner}
         />
 

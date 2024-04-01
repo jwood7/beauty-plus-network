@@ -6,7 +6,7 @@
     grid-area: 1 / 1;
 }
 
-.heroChildren{
+.heroBackground{
     grid-area: 1 / 1;
     position: relative;
     place-items: center;
@@ -18,10 +18,28 @@
     padding: 50px 10px;
 }
 
+
 /* desktop view */
 @media screen and (min-width: 768px) {
     .hero{
         height: 400px;
+    }
+
+    .heroChildren{
+        max-width: 1090px;
+        margin: auto;
+    }
+
+    .heroChildren p{
+        padding-bottom: 40px;
+    }
+
+    .heroChildren h2{
+        padding-bottom: 36px;
+    }
+
+    .heroChildren h1{
+        padding-bottom: 40px;
     }
     
 }

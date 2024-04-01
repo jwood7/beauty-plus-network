@@ -56,7 +56,9 @@
 
     .heroTitle h1{
         font-size: 24px;
-        padding-left: 40%;
+        /* padding-left: 16%; */
+        text-align: right;
+        width: 100%;
     }
 }
 

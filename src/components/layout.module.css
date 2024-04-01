@@ -284,12 +284,12 @@ footer a {
     }
 
     .mainFooter {
-        justify-content: space-between;
-        padding: 38px 20px 34px;
+        justify-content: center;
+        /* padding: 38px 20px 34px; */
     }
     
     footer ul {
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
 
     
