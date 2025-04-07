@@ -26,7 +26,7 @@ const IndexPage = ({data}: PageProps) => {
         alt="Beauty Plus Student and Mentor Hugging"
         imageData={data.file.childImageSharp.gatsbyImageData}
       >
-        <h1>Having the power to earn a sustainabe income transforms lives. <br/>
+        <h1>Having the power to earn a sustainable income transforms lives. <br/>
         It transforms communities.<br/>
         The Beauty+ Network has enabled this over 10 years thanks to our partners.<br/>
         With the more than 500 women in our Network we work to make the world a more beautiful place.</h1>
